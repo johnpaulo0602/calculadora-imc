@@ -28,5 +28,15 @@ function calcularImc() {
         imc.innerHTML = '<div class="result" style="color: #ffffff; font-size: 32px; font-style: normal; font-weight: 500; font-family: Inter; text-align: center;"><strong>Você está com obesidade.</strong></div>';
     else
         imc.innerHTML = '<div class="result" style="color: #ffffff; font-size: 32px; font-style: normal; font-weight: 500; font-family: Inter; text-align: center;"><strong>Você está com obesidade mórbida.</strong></div>';
+    }
+   
+function verificarInput(event) {
+    var letra = event.key;
+
+    if (letra != 0 && letra != 1 && letra != 2 && letra != 3 && letra != 4 && letra != 5 && letra != 6 && letra != 7 && letra != 8 && letra != 9 && letra != ',' && letra != '.' && letra != 'Tab' && letra != 'Enter' && letra != 'Backspace' && letra != 'Delete' && letra != 'ArrowLeft' && letra != 'ArrowRight') {
+        alert('Caractere inválido!');
+        document.getElementById('gasolina').value = ' ';
+        document.getElementById('etanol').value = ' ';
+    }
 
 }
