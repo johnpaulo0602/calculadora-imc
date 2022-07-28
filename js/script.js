@@ -33,10 +33,10 @@ function calcularImc() {
 function verificarInput(event) {
     var letra = event.key;
 
-    if (letra != 0 && letra != 1 && letra != 2 && letra != 3 && letra != 4 && letra != 5 && letra != 6 && letra != 7 && letra != 8 && letra != 9 && letra != ',' && letra != '.' && letra != 'Tab' && letra != 'Enter' && letra != 'Backspace' && letra != 'Delete' && letra != 'ArrowLeft' && letra != 'ArrowRight') {
+    if (letra != 0 && letra != 1 && letra != 2 && letra != 3 && letra != 4 && letra != 5 && letra != 6 && letra != 7 && letra != 8 && letra != 9 && letra != ',' && letra != '.' && letra != 'Tab' && letra != 'Enter' && letra != 'Backspace' && letra != 'Delete' && letra != 'ArrowLeft' && letra != 'ArrowRight' ) {
         alert('Caractere inválido!');
-        document.getElementById('gasolina').value = ' ';
-        document.getElementById('etanol').value = ' ';
+        document.getElementById('altura').value = '';
+        document.getElementById('peso').value   = '';
     }
 
 }
