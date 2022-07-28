@@ -15,18 +15,18 @@ function calcularImc() {
     calculo = calculo.toFixed(2);
 
     // mostrar na tela o imc do usuário
-    result.innerHTML += calculo.replace('.',',') + '<div class="result" style="color: #ffffff; font-size: 36px; font-style: normal; font-weight: 500; font-family: 'Inter';"> O seu IMC é <strong>' + calculo + '</strong><br /></div>';
+    result.innerHTML += '<div class="result" style="color: #ffffff; font-size: 32px; font-style: normal; font-weight: 500; font-family: Inter; text-align: center;"> O seu IMC é <strong>' + calculo + '</strong><br /></div>';
 
     // MOSTRA SE O USUÁRIO ESTÁ NO PESO IDEAL OU NÃO
     if (calculo < 18.5)
-        imc.innerHTML = 'Você está abaixo do peso.';
+        imc.innerHTML = '<div class="result" style="color: #ffffff; font-size: 32px; font-style: normal; font-weight: 500; font-family: Inter; text-align: center;"><strong>Você está abaixo do peso.</strong></div>';
     else if (calculo >= 18.5 && calculo <= 24.9)
-        imc.innerHTML = 'Você está no peso ideal.';
+        imc.innerHTML = '<div class="result" style="color: #ffffff; font-size: 32px; font-style: normal; font-weight: 500; font-family: Inter; text-align: center;"><strong>Você está no peso ideal.</strong></div>';
     else if (calculo >= 25 && calculo <= 29.9)
-        imc.innerHTML = 'Você está acima do peso.';
+        imc.innerHTML = '<div class="result" style="color: #ffffff; font-size: 32px; font-style: normal; font-weight: 500; font-family: Inter; text-align: center;"><strong>Você está acima do peso.</strong></div>';
     else if (calculo >= 30 && calculo <= 40)
-        imc.innerHTML = 'Você está com obesidade.';
+        imc.innerHTML = '<div class="result" style="color: #ffffff; font-size: 32px; font-style: normal; font-weight: 500; font-family: Inter; text-align: center;"><strong>Você está com obesidade.</strong></div>';
     else
-        imc.innerHTML = 'Você está com obesidade mórbida.';
+        imc.innerHTML = '<div class="result" style="color: #ffffff; font-size: 32px; font-style: normal; font-weight: 500; font-family: Inter; text-align: center;"><strong>Você está com obesidade mórbida.</strong></div>';
 
 }
