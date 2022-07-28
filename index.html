@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="John Paulo da Silva Paiva" />
+    <title>IMC</title>
+    <link rel="stylesheet" href="css/estilo.css" media="all" />
+</head>
+<body>
+    <main class="container">
+        <div class="conteudo-container" >
+            <h1>Para calcular o IMC (Índice de Massa Corporal), basta preencher os campos abaixo.</h1>
+            <form class="form" onsubmit="return false;">
+                <div class="label" >
+                    <div class="altura">
+                        <label>Altura(ex: 1,70)</label><br />
+                        <input type="text" id="altura" />
+                        <br /><br />
+                    </div>
+                    <div class="peso">
+                        <label>Peso(ex: 69,7)</label><br />
+                        <input type="text" id="peso" />
+                        <br /><br />
+                    </div>
+                </div>
+                <button onclick="calcularImc();">Calcular</button>
+                <div id="result"></div>
+                <div id="imc"></div>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
